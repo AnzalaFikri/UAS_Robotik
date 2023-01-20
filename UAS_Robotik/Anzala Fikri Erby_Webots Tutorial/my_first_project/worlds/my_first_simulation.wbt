@@ -1,0 +1,65 @@
+#VRML_SIM R2023a utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/factory/containers/protos/WoodenBox.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/appearances/protos/BrushedAluminium.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/robots/nvidia/jetbot/protos/JetBot.proto"
+
+WorldInfo {
+  basicTimeStep 16
+}
+Viewpoint {
+  orientation -0.11241586521889617 -0.5478281650543014 0.8290036036232438 5.797906326806355
+  position -2.237007300041155 0.44783262177942246 0.7932396715829366
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  rotation 0 1 0 0
+  floorTileSize 0.25 0.25
+  wallHeight 0.05
+  wallAppearance BrushedAluminium {
+    colorOverride 1 0 0
+  }
+}
+WoodenBox {
+  translation -0.323236 -0.325317 0.5
+  size 0.1 0.1 0.1
+}
+WoodenBox {
+  translation -0.277222 0.55003 0.5
+  rotation 0 0 1 4.692820414042842e-06
+  name "wooden box(2)"
+  size 0.1 0.1 0.1
+}
+WoodenBox {
+  translation 0.636756 -0.534796 0.5
+  rotation 0 0 1 4.692820414042842e-06
+  name "wooden box(3)"
+  size 0.1 0.1 0.1
+}
+WoodenBox {
+  translation 0.351104 0.367235 0.5
+  name "wooden box(1)"
+  size 0.1 0.1 0.1
+}
+JetBot {
+  hidden position_0_0 0.9272170024285814
+  hidden position_0_1 0.9272428682201388
+  hidden linearVelocity_0 4.306756953152506e-07 -2.7428735658177457e-08 3.0670594751179843e-09
+  hidden angularVelocity_0 2.8886924542248332e-08 -1.0782966265926016e-06 -5.898124788620912e-06
+  hidden translation_5 0.030000431404580932 0.0521500000157608 0.0300003150464317
+  hidden rotation_5 0.4082219317244997 0.40822043050690693 0.8165236889251124 1.7721253163583153
+  hidden linearVelocity_5 5.454887864453923e-07 2.117804009943605e-07 5.7069838084683974e-08
+  hidden angularVelocity_5 -1.1343749948823157e-07 -2.798695671526942e-06 -6.054725600597349e-06
+  hidden translation_6 0.030000436576594583 -0.05949999998422251 0.030000318850345715
+  hidden rotation_6 0.40823048155681596 0.408230482572318 0.8165143887444131 1.7721328706452417
+  hidden linearVelocity_6 -9.609029359305925e-07 -1.934447163444798e-07 -6.04617465182328e-08
+  hidden angularVelocity_6 1.7330820435442906e-07 6.658735707814443e-07 -6.060821818126227e-06
+  translation -0.04892945878675745 -0.14620697307837455 -0.0002006543285760637
+  rotation -0.000692386670471636 -0.0006479016635270376 -0.9999995504119654 1.6445292626406556
+}

@@ -1,0 +1,85 @@
+#VRML_SIM R2023a utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/floors/protos/Floor.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/robots/lego/mindstorms/protos/MindstormsRover.proto"
+
+WorldInfo {
+  basicTimeStep 16
+}
+Viewpoint {
+  orientation 0.4800342920335422 -0.40422105914638506 -0.7785707506800075 4.8355617669079525
+  position -0.779861049423666 -1.2888351411293613 1.5590500902375939
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+Floor {
+  size 1 1
+}
+DEF WALL_1 Solid {
+  translation 0.5 0 0.05
+  children [
+    DEF WALL_SHAPE Shape {
+      appearance PBRAppearance {
+        baseColor 0 1 0.498039
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.02 0.98 0.1
+      }
+    }
+  ]
+  boundingObject USE WALL_SHAPE
+}
+DEF WALL_2 Solid {
+  translation -0.5 0 0.05
+  children [
+    USE WALL_SHAPE
+  ]
+  name "solid(1)"
+  boundingObject USE WALL_SHAPE
+}
+DEF WALL_3 Solid {
+  translation 0 -0.5 0.05
+  rotation 0 0 1 1.5708
+  children [
+    USE WALL_SHAPE
+  ]
+  name "solid(2)"
+  boundingObject USE WALL_SHAPE
+}
+DEF WALL_4 Solid {
+  translation 0 0.5 0.05
+  rotation 0 0 1 1.5708
+  children [
+    USE WALL_SHAPE
+  ]
+  name "solid(3)"
+  boundingObject USE WALL_SHAPE
+}
+MindstormsRover {
+  hidden position_0_0 3.104000482672194
+  hidden position_0_1 15.519998744177965
+  hidden linearVelocity_0 -0.0032291295090205894 0.005435279152277176 -1.2670769405538102e-09
+  hidden angularVelocity_0 -3.478188419509741e-06 3.0360029406607555e-06 0.15628352114970004
+  hidden translation_2 0.02460057384141546 -0.02400038163766241 0.015999982597202967
+  hidden rotation_2 0.4138382225498593 -0.4570750517714864 0.787286683873712 1.4042500977111063e-16
+  hidden linearVelocity_2 -0.009864687048747333 0.003572480933970645 -1.1274288359841567e-07
+  hidden angularVelocity_2 -3.4781884143220247e-06 3.036002941271593e-06 0.15628352114969948
+  hidden translation_3 0.02460058228300712 0.024000368625229446 0.015999982447292782
+  hidden rotation_3 0.10735050795529927 -0.16358172640807508 0.9806716510775116 3.3934811943956573e-16
+  hidden linearVelocity_3 -0.004232999265771016 -0.001383313846222634 1.0886278287158824e-07
+  hidden angularVelocity_3 -3.4781884180282076e-06 3.036002939492887e-06 0.15628352114969868
+  hidden rotation_4 -0.30921880056748247 0.30920876026032856 -0.8993184508025388 1.6767160070153184
+  hidden linearVelocity_4 -0.001853097192813831 0.001628708153578702 1.0131354243358347e-07
+  hidden angularVelocity_4 -0.13212785961076992 -0.15014099317560992 0.15629004326738602
+  hidden rotation_5 -0.40811509499323334 0.40812309761070625 0.8166257444112978 4.511192662780322
+  hidden linearVelocity_5 -0.007156206147044818 0.006295475985493 -1.0335396564899468e-07
+  hidden angularVelocity_5 -0.6606309164759556 -0.7507118471377815 0.15639550580660289
+  translation 0.024395701710123337 0.06752605025791267 -0.0019346718542858146
+  rotation 0.008314412027338403 -0.0031242311342536346 0.9999605540882396 2.4212231428728006
+}
